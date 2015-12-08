@@ -3,7 +3,7 @@ var express = require('express');
 
 
 //Express Connection
-var port = 8080;
+var port = process.env.PORT;
 var app = express();
 
 app
