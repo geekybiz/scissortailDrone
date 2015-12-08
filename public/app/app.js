@@ -27,62 +27,10 @@ angular.module("macysApp", ["ui.router", "ui.materialize", "angularPayments"])
     controller: 'servicesCtrl'
   })
 
-  // .state('homeServices', {
-  //   url: '/homeservices',
-  //   templateUrl: 'app/views/homeServices/homeServicesTmpl.html',
-  //   controller: 'homeServicesCtrl'
-  // })
-  //
-  // .state('commServices', {
-  //   url: '/commservices',
-  //   templateUrl: 'app/views/commServices/commServicesTmpl.html',
-  //   controller: 'commServicesCtrl'
-  // })
-
   .state('contact', {
     url: '/contact',
     templateUrl: 'app/views/contact/contactTmpl.html',
     controller: 'contactCtrl'
-  })
-
-  .state('store', {
-    url: '/store',
-    templateUrl: 'app/views/store/storeTmpl.html',
-    controller: 'storeCtrl',
-    resolve: {
-      getProducts: function(storeService){
-        return storeService.getAllProductData().then(function(resp){
-          return resp.data;
-        }, function(err){
-          console.log(err);
-        });
-      }
-    }
-  })
-
-  .state('cart', {
-    url: '/cart',
-    templateUrl: 'app/views/cart/cartTmpl.html',
-    controller: 'cartCtrl',
-    resolve: {
-      getCart: function(cartService) {
-        return cartService.getCart().then(function(resp) {
-          return resp.data;
-        });
-      }
-    }
-  })
-
-  .state('checkout', {
-    url: '/checkout',
-    templateUrl: 'app/views/checkout/checkoutTmpl.html',
-    controller: 'checkoutCtrl'
-  })
-
-  .state('admin', {
-    url: '/admin',
-    templateUrl: 'app/views/admin/adminTmpl.html',
-    controller: 'adminCtrl'
   })
 
   $urlRouterProvider.otherwise('/home');

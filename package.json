@@ -1,10 +1,6 @@
 {
   "name": "macys-glass",
   "version": "1.0.0",
-  "engines": {
-    "node": "4.0.0",
-    "npm": "2.14.2"
-  },
   "description": "",
   "main": "server.js",
   "dependencies": {
@@ -15,6 +11,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geekybiz/macys-glass-site.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geekybiz/macys-glass-site/issues"
+  },
+  "homepage": "https://github.com/geekybiz/macys-glass-site#readme"
 }
