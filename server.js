@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var mongoose = require('mongoose');
 var mongoURI = 'mongodb://localhost:27017/macysApp';
-var session = require('express-session');
+// var session = require('express-session');
 
 //Mongoose Connection
 mongoose.set('debug', true);
@@ -21,7 +21,7 @@ app
   .use(bodyParser.json())
   .use(cors())
   .use(express.static(__dirname + '/public'))
-  .use(session({secret: 'secret'}));
+  // .use(session({secret: 'secret'}));
 
 
 
