@@ -6,11 +6,6 @@ logs
 *.log
 npm-debug.log*
 
-### Bower ###
-bower_components
-.bower-cache
-.bower-registry
-.bower-tmp
 
 # Runtime data
 pids
