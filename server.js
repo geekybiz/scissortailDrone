@@ -1,7 +1,7 @@
 //Express modules
 var express = require('express');
-var bodyParser = require('body-parser');
-var cors = require('cors');
+// var bodyParser = require('body-parser');
+// var cors = require('cors');
 // var mongoose = require('mongoose');
 // var mongoURI = 'mongodb://localhost:27017/macysApp';
 // var session = require('express-session');
@@ -18,8 +18,8 @@ var port = 8080;
 var app = express();
 
 app
-  .use(bodyParser.json())
-  .use(cors())
+  // .use(bodyParser.json())
+  // .use(cors())
   .use(express.static(__dirname + '/public'))
   // .use(session({secret: 'secret'}));
 
