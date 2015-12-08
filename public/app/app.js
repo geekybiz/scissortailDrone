@@ -1,8 +1,4 @@
-angular.module("macysApp", ["ui.router", "ui.materialize", "angularPayments"])
-
-.config(function() {
-  Stripe.setPublishableKey('pk_test_EfL4Q9ol8yuS5yMornTqnBNK');
-})
+angular.module("macysApp", ["ui.router", "ui.materialize"])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -11,26 +7,22 @@ angular.module("macysApp", ["ui.router", "ui.materialize", "angularPayments"])
 
     .state('home', {
     url: '/home',
-    templateUrl: 'app/views/home/homeTmpl.html',
-    controller: 'homeCtrl'
+    templateUrl: 'app/views/home/homeTmpl.html'
   })
 
   .state('about', {
     url: '/about',
-    templateUrl: 'app/views/about/aboutTmpl.html',
-    controller: 'aboutCtrl'
+    templateUrl: 'app/views/about/aboutTmpl.html'
   })
 
   .state('services', {
     url: '/services',
-    templateUrl: 'app/views/services/servicesTmpl.html',
-    controller: 'servicesCtrl'
+    templateUrl: 'app/views/services/servicesTmpl.html'
   })
 
   .state('contact', {
     url: '/contact',
-    templateUrl: 'app/views/contact/contactTmpl.html',
-    controller: 'contactCtrl'
+    templateUrl: 'app/views/contact/contactTmpl.html'
   })
 
   $urlRouterProvider.otherwise('/home');
