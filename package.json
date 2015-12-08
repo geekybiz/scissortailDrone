@@ -9,10 +9,7 @@
     "cors": "^2.7.1",
     "express": "^4.13.3",
     "express-session": "^1.11.3",
-    "mongoose": "^4.1.10",
-    "engines": {
-      "node": "4.0.0"
-    },
+    "mongoose": "^4.1.10"
   },
   "devDependencies": {},
   "scripts": {
