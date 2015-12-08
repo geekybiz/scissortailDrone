@@ -2,16 +2,16 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var cors = require('cors');
-var mongoose = require('mongoose');
-var mongoURI = 'mongodb://localhost:27017/macysApp';
+// var mongoose = require('mongoose');
+// var mongoURI = 'mongodb://localhost:27017/macysApp';
 var session = require('express-session');
 
 //Mongoose Connection
-mongoose.set('debug', true);
-mongoose.connect(mongoURI);
-mongoose.connection.once('open', function() {
-console.log('Connected to mongoDB at: ', mongoURI);
-});
+// mongoose.set('debug', true);
+// mongoose.connect(mongoURI);
+// mongoose.connection.once('open', function() {
+// console.log('Connected to mongoDB at: ', mongoURI);
+// });
 
 //Express Connection
 var port = 8080;
