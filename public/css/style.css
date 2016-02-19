@@ -9,7 +9,9 @@
  */
 
 html, body {
+  margin: 0 auto;
   height: 100%;
+  padding: 0;
 }
 nav ul a {
   color: #312F2F;
@@ -19,9 +21,6 @@ nav .brand-logo {
   font-family: "Lobster";
 }
 nav .material-icons {
-  color: #312F2F;
-}
-i.medium {
   color: #312F2F;
 }
 p {
@@ -38,6 +37,98 @@ p {
 }
 .parallax-container .section {
   width: 100%;
+}
+.materializeLogo {
+  font-size: .5em;
+}
+h2 > .material-icons {
+  font-size: inherit;
+  color: #312F2F;
+}
+
+.brand-logo {
+  font-size: 32em;
+}
+/***************
+  Navigation
+***************/
+
+/*nav {
+  position: fixed;
+  z-index: 1;
+}*/
+
+/***************
+  Home Page
+***************/
+
+.section.no-pad-bot {
+  padding-top: 4rem;
+}
+
+/***************
+  Footer
+***************/
+
+footer.page-footer {
+  height: inherit;
+  margin: 0;
+  background-color: #312F2F;
+  text-align: center;
+}
+.contact {
+  text-align: center;
+}
+.contactIcon {
+  color: #fff;
+  padding-right: 3em;
+}
+i.medium {
+  font-size: 2.5rem;
+}
+.white-text {
+  padding-bottom: 1.25em;
+  margin: 0
+}
+
+/***************
+  About Page
+***************/
+
+.text {
+  padding-top: 4rem;
+}
+
+/***************
+  Services
+***************/
+
+.servicesWrapper {
+  max-width: 65em;
+  margin: 0 auto;
+}
+.service {
+  padding-bottom: 1.5em;
+  height: 400px;
+}
+.serviceImg {
+  max-width: 100%;
+  height: auto;
+  float: left;
+  padding-right: 1.5em;
+}
+#showerPic {
+  padding-top: 1.250em;
+}
+.serviceItem {
+  text-align: justify;
+  font-size: 1.5em;
+}
+.serviceTitle {
+  text-align: center;
+}
+.contactBtn {
+  display: none;
 }
 @media only screen and (max-width: 992px) {
   .parallax-container .section {
@@ -59,12 +150,6 @@ p {
 .icon-block .material-icons {
   font-size: inherit;
   color: #312F2F;
-}
-footer.page-footer {
-  margin: 0;
-  background-color: #312F2F;
-  text-align: center;
-  color: white;
 }
 .row.col.l6 {
   text-align: center;
@@ -103,28 +188,13 @@ a.dropdown-button.btn .dropdown-content active {
   border-bottom: 1px solid blue;
   box-shadow: 0 1px 0 0 blue;
 }
-
-/*.sprayCan{
-  background: red;
-  width:60px;
-  height:60px;
-}
-
-.sprayCan > img {
-  width:100%;
-}*/
-
-
-/*.li > img {
-  width:60px;
-  height:60px;
-}*/
-
 .ng-invalid {
   color: red;
 }
 
-/*About View*/
+/***************
+  About View
+***************/
 
 #about-view {
   height: 100%;
@@ -136,21 +206,23 @@ a.dropdown-button.btn .dropdown-content active {
 }
 .text {
   margin-left: 20px;
+  width: 50%;
 }
 #about-view h1 {
   margin-top: 0px;
-  padding: 20px;
+  padding-top: 20px;
   color: #ececec;
 }
 #about-view p {
   padding: 20px;
-  width: 50%;
   color: #ececec;
   font-size: 2em;
   line-height: 2em;
 }
 
-/*Contact View*/
+/***************
+  Contact View
+***************/
 
 #contact-view {
   height: 100%;
@@ -159,127 +231,91 @@ a.dropdown-button.btn .dropdown-content active {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 3%;
 }
 .contactText {
   text-align: center;
   color: #ececec;
-  /*margin-top: 100px;*/
-  height: 100%;
-  width: 100%;
+  padding-top: 10%;
 }
-.contactText h3 {
+h3.contactText {
   text-decoration: underline;
 }
 .contactText a {
   color: #ececec;
 }
-
-/*Cart View*/
-
-#cart-view .btn-large {
-  float: right;
+h1.contactStatement {
+  font-size: 3em;
+}
+h3.contactTitle {
+  font-size: 2.5em;
+}
+h4.contactItem {
+  font-size: 2em;
 }
 
-/*Home Services View*/
+/*******************
+  RESPONSIVE STYLES
+*******************/
 
-#homeServices-view .contactBtn {
-  text-align: center;
-  bottom: 0;
-  margin-top: 75px;
-  color: black;
-}
-#homeServices-view {
-  height: 100%;
-  width: 100%;
-}
-
-/*Services Responsive CSS*/
-
-@media (max-width: 1040px) {
-  /*Wrapper*/
-  .wrapper {
-    display: block;
-    margin: auto;
-    width: 50%;
-    /*width: 100%;*/
-    align-item: center;
-    text-align: center;
+@media only screen and (max-width: 1040px) {
+  /**********************
+           Footer
+  **********************/
+  h5.white-text {
+    font-size: 1.25rem;
   }
-  /*Button*/
-  .waves-effect.waves-light.white.black-text {
-    float: left;
-    /*width: 50%;*/
-    margin-bottom: 2%;
-    width: 490px;
-
+  /**********************
+  Services Mobile Styles
+  **********************/
+  .servicesWrapper {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 480px;
+    padding: 0 10px;
   }
   .serviceImg {
-    width: 500px;
-    height: 372px;
-    margin-top: 0px;
-    float: left;
+    float: none;
+    padding-left: 10px;
     padding-right: 10px;
-    text-align: center;
   }
-  h3 {
-    float: left;
-    /*font-size: 4rem;*/
-    /*width: 50%;*/
-    margin: auto;
-    text-align: center;
-    width: 500px;
+  img.showerPic {
+    padding-top: 1.250em;
   }
-
-  h5 {
-    float: left;
-    width: 475px;
-    text-align: center;
+  .service {
+    height: inherit;
   }
-  div {
-    position: relative;
+  p.serviceItem {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /**********************
+   About Mobile Styles
+  **********************/
+  .text {
+    width: 100%;
+    height: inherit;
+  }
+  #about-view h1 {
+    font-size: 2em;
+  }
+  #about-view p {
+    font-size: 1.5em;
+    padding-left: 0px;
   }
 }
 
-/*Services Non-Responsive CSS*/
-
-.service {
-  height: 372px;
-}
-
-.serviceImg {
-  width: 500px;
-  height: 372px;
-  margin-top: 0px;
-  float: left;
-  padding-right: 10px;
+@media only screen and (max-width: 570px) {
+/**********************
+ Contact Mobile Styles
+**********************/
+h1.contactStatement {
+  font-size: 1.5em;
   padding-left: 10px;
 }
-h3 {
-  text-align: center;
-  position: relative;
+h3.contactTitle {
+  font-size: 1.5em;
 }
-h5 {
-  margin: 10px;
-  line-height: inherit;
-  text-align: center;
+h4.contactItem {
+  font-size: 1em;
 }
-
-/*Footer*/
-
-
-/*#homeServices-view footer.page-footer {
-  margin-top: 10px;
-  background-color: #312F2F;
-  text-align: center;
-  color: white;
-  position: fixed;
 }
-
-#homeServices-view .container ul {
-  margin-bottom: 0;
-}
-
-#homeServices-view .address {
-  padding-bottom: 10px;
-}*/
