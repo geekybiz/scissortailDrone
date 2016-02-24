@@ -2,8 +2,7 @@
   "name": "macys-glass",
   "version": "1.0.0",
   "cacheDirectories": [
-    "node_modules",
-    "bower_components"
+    "node_modules"
   ],
   "engines": {
     "node": "4.0.0",
