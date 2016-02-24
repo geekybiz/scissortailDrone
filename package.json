@@ -1,7 +1,10 @@
 {
   "name": "macys-glass",
   "version": "1.0.0",
-  "cacheDirectories": ["node_modules", "bower_components" ],
+  "cacheDirectories": [
+    "node_modules",
+    "bower_components"
+  ],
   "engines": {
     "node": "4.0.0",
     "npm": "2.14.2"
@@ -9,6 +12,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "angular-materialize": "^0.1.2",
     "compression": "^1.6.1",
     "express": "^4.13.3"
   },
