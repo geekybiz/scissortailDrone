@@ -1,6 +1,6 @@
 angular.module("macysApp", ["ui.router", "ui.materialize"])
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
   $stateProvider
 
@@ -25,10 +25,12 @@ angular.module("macysApp", ["ui.router", "ui.materialize"])
     templateUrl: 'app/views/contact/contactTmpl.html'
   })
 
-  .state('sitemap', {
-    url: '/sitemap',
-    templateUrl: 'sitemap.xml'
-  })
-
   $urlRouterProvider.otherwise('/home');
+
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
+  $locationProvider.hashPrefix('!');
+
 });
