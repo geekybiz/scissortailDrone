@@ -12,6 +12,7 @@
   "main": "server.js",
   "dependencies": {
     "angular-materialize": "^0.1.2",
+    "angular-route": "^1.5.0",
     "compression": "^1.6.1",
     "express": "^4.13.3",
     "prerender-node": "^2.2.0"
