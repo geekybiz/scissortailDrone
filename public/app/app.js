@@ -25,5 +25,10 @@ angular.module("macysApp", ["ui.router", "ui.materialize"])
     templateUrl: 'app/views/contact/contactTmpl.html'
   })
 
+  .state('sitemap', {
+    url: '/sitemap',
+    templateUrl: 'sitemap.xml'
+  })
+
   $urlRouterProvider.otherwise('/home');
 });

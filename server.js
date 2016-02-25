@@ -13,7 +13,6 @@ app.use(compress());
 app.use(express.static(__dirname + '/public'))
 
 //Port verification
-
 app.listen(port, function(){
   console.log("Listening on port: ", port);
 });
