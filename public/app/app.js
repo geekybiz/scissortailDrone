@@ -25,12 +25,12 @@ angular.module("macysApp", ["ui.router", "ui.materialize"])
     templateUrl: 'app/views/contact/contactTmpl.html'
   })
 
-  $urlRouterProvider.otherwise('/home');
+  // $locationProvider.html5Mode({
+  //   enabled: true,
+  //   requireBase: false
+  // });
+  // $locationProvider.hashPrefix('!');
 
-  $locationProvider.html5Mode({
-    enabled: true,
-    requireBase: false
-  });
-  $locationProvider.hashPrefix('!');
+  $urlRouterProvider.otherwise('/home');
 
 });
