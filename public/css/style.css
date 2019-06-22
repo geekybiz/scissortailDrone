@@ -8,21 +8,46 @@
  * Made By MaterializeCSS.com
  */
 
+
+
 html, body {
   margin: 0 auto;
   height: 100%;
   padding: 0;
 }
+
+/***************
+  Navigation - Desktop
+***************/
+
+/*nav {
+  position: fixed;
+  z-index: 1;
+}*/
+
+.navigation-ribbon {
+  background-color: #324759;
+  min-height: 64px;
+}
+
 nav ul a {
-  color: #312F2F;
+  color: #FFFFFF;
 }
-nav .brand-logo {
-  color: #312F2F;
-  font-family: "Lobster";
+
+img.brand-logo {
+  max-height: 64px;
 }
+
+/**********************
+  Navigation - Mobile
+***********************/
+
 nav .material-icons {
-  color: #312F2F;
+  color: #FFFFFF;
 }
+
+
+
 p {
   line-height: 2rem;
 }
@@ -49,14 +74,6 @@ h2 > .material-icons {
 .brand-logo {
   font-size: 32em;
 }
-/***************
-  Navigation
-***************/
-
-/*nav {
-  position: fixed;
-  z-index: 1;
-}*/
 
 /***************
   Home Page
@@ -73,7 +90,7 @@ h2 > .material-icons {
 footer.page-footer {
   height: inherit;
   margin: 0;
-  background-color: #312F2F;
+  background-color: #324759;
   text-align: center;
 }
 .contact {
