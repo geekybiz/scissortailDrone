@@ -14,10 +14,10 @@ app.use(require('prerender-node').set('prerenderToken', 'PCayKoAiRyC2eJaFeVNA'))
 app.use(express.static(__dirname + '/public'));
 
 app.get('*', function(req, res){
-  res.sendfile('./public/index.html');
+  res.sendFile('./public/index.html');
 });
 
 //Port verification
-app.listen(port, function(){
-  console.log("Listening on port: ", port);
+var listener = app.listen(port, function(){
+  console.log("Listening on port: " + listener.address().port);
 });
