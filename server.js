@@ -14,7 +14,7 @@ app.use(require('prerender-node').set('prerenderToken', 'PCayKoAiRyC2eJaFeVNA'))
 app.use(express.static(__dirname + '/public'));
 
 app.get('*', function(req, res){
-  res.sendFile('./public/index.html');
+  res.sendFile('./public/index.html', {root: __dirname});
 });
 
 //Port verification
