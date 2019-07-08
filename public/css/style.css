@@ -157,7 +157,7 @@ i.medium {
   float: left;
   padding-right: 1.5em;
 }
-#showerPic {
+#lawEnforcementPic {
   padding-top: 1.250em;
 }
 .serviceItem {
@@ -318,9 +318,7 @@ h4.contactItem {
     padding-left: 10px;
     padding-right: 10px;
   }
-  img.showerPic {
-    padding-top: 1.250em;
-  }
+
   .service {
     height: inherit;
   }
