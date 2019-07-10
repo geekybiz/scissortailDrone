@@ -18,7 +18,7 @@ var app = angular.module("macysApp", ["ngRoute", "ui.materialize"])
     controller: 'aboutController'
   })
 
-  $routeProvider.when('/services', {
+  $routeProvider.when('/programs', {
     templateUrl: 'app/views/services/servicesTmpl.html',
     controller: 'servicesController'
   })
@@ -47,14 +47,14 @@ var app = angular.module("macysApp", ["ngRoute", "ui.materialize"])
 
 .controller('homeController', function ($scope) {
   $scope.$parent.seo = {
-    pageTitle: 'Your one stop glass shop',
-    pageDescription: 'Your one stop shop for shower doors, custom mirrors, commercial glass, auto glass, flat glass, safety glass.'
+    pageTitle: 'Customized drone programs for you',
+    pageDescription: 'Comprehensive drone programs that include flight training, licensing, policy writing, and support.'
   };
 })
 
 .controller('servicesController', function ($scope) {
   $scope.$parent.seo = {
-    pageTitle: 'Services',
+    pageTitle: 'Programs',
     pageDescription: 'Check out our comprehensive list of services that fulfill all of your glass needs.'
   };
 })
