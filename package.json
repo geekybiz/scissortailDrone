@@ -23,6 +23,7 @@
     "jquery": "^3.4.1",
     "prerender-node": "^2.8.0",
     "safe-buffer": "^5.2.0",
+    "use-strict": "^1.0.1",
     "util": "^0.12.1"
   },
   "devDependencies": {},
