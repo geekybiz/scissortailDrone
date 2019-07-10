@@ -1,5 +1,5 @@
 //Express modules
-'use strict';
+require('use-strict');
 var compress = require('compression');
 var express = require('express');
 
