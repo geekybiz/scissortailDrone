@@ -9,7 +9,7 @@
     "npm": "2.14.2"
   },
   "description": "",
-  "main": "server.js",
+  "main": "Server.js",
   "dependencies": {
     "angular-materialize": "^0.1.9",
     "angular-route": "^1.5.0",
@@ -20,7 +20,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node Server.js"
   },
   "repository": {
     "type": "git",
