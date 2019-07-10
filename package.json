@@ -17,8 +17,11 @@
     "bytes": "^3.1.0",
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "prerender-node": "^2.2.0",
-    "safe-buffer": "^5.2.0"
+    "fs": "0.0.1-security",
+    "jquery": "^3.4.1",
+    "prerender-node": "^2.8.0",
+    "safe-buffer": "^5.2.0",
+    "util": "^0.12.1"
   },
   "devDependencies": {},
   "scripts": {
