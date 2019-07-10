@@ -1,5 +1,5 @@
 {
-  "name": "macys-glass",
+  "name": "scissortailDrone",
   "version": "1.0.0",
   "cacheDirectories": [
     "node_modules"
@@ -24,12 +24,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geekybiz/macys-glass-site.git"
+    "url": "git+https://github.com/geekybiz/scissortailDrone.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/geekybiz/macys-glass-site/issues"
+    "url": "https://github.com/geekybiz/scissortailDrone.git/issues"
   },
-  "homepage": "https://github.com/geekybiz/macys-glass-site#readme"
+  "homepage": "https://github.com/geekybiz/scissortailDrone.git#readme"
 }
