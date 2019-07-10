@@ -21,6 +21,7 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "jquery": "^3.4.1",
+    "latest-version": "^5.1.0",
     "prerender-node": "^2.8.0",
     "safe-buffer": "^5.2.0",
     "use-strict": "^1.0.1",
